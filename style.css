@@ -723,13 +723,6 @@ footer {
     gap: 8px;
   }
 
-  .back-to-top {
-  right: 16px;
-  bottom: 16px;
-  width: 46px;
-  height: 46px;
-  font-size: 20px;
-}
 }
 
 
@@ -773,4 +766,14 @@ footer {
 .back-to-top:hover {
   background: var(--ink);
   color: var(--white);
+}
+
+@media (max-width: 520px) {
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 46px;
+    height: 46px;
+    font-size: 20px;
+  }
 }
