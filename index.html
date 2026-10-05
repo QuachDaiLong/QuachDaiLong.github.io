@@ -11,9 +11,13 @@
 
   <div class="cursor-glow"></div>
 
-  <nav class="nav">
+  <nav class="nav" aria-label="Primary navigation">
     <a class="logo" href="#home">QL<span>.</span></a>
-    <div class="nav-links">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+      <span class="nav-toggle-label">Menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true">＋</span>
+    </button>
+    <div class="nav-links" id="primary-navigation">
       <a href="#work">Work</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -41,7 +45,7 @@
 
         <div class="hero-actions">
           <a class="button button-dark" href="#work">View my work <span>↓</span></a>
-          <a class="text-link" href="https://www.artstation.com/quachdailong" target="_blank">ArtStation ↗</a>
+          <a class="text-link" href="https://www.artstation.com/quachdailong" target="_blank" rel="noopener noreferrer">ArtStation ↗</a>
         </div>
       </div>
 
@@ -64,53 +68,22 @@
           <p class="eyebrow">01 / Selected work</p>
           <h2>Projects<span>.</span></h2>
         </div>
-        <p class="section-intro">A selection of character work, studies and game-ready assets.</p>
+        <p class="section-intro">One featured character project, with the workflow overview below.</p>
       </div>
 
       <div class="project-grid">
 
         <article class="project-card project-large">
-          <a href="#project-elf" class="project-image">
-            <img src="assets/project-elf.jpg" alt="Stylized Elf Character">
+          <a href="https://www.artstation.com/quachdailong" class="project-image" target="_blank" rel="noopener noreferrer" aria-label="View Character Project on ArtStation (opens in a new tab)">
+            <img src="assets/project-elf.jpg" alt="Stylized character project, final render">
             <span class="project-number">01</span>
             <span class="view-project">VIEW PROJECT ↗</span>
           </a>
           <div class="project-meta">
             <div>
-              <h3>Stylized Elf</h3>
-              <p>Character / Game-ready</p>
+              <h3><a href="https://www.artstation.com/quachdailong" target="_blank" rel="noopener noreferrer">Character Project ↗</a></h3>
+              <p>Character art / production workflow</p>
             </div>
-            <span>2026</span>
-          </div>
-        </article>
-
-        <article class="project-card project-small">
-          <a href="#project-study" class="project-image">
-            <img src="assets/project-study.jpg" alt="Character study">
-            <span class="project-number">02</span>
-            <span class="view-project">VIEW PROJECT ↗</span>
-          </a>
-          <div class="project-meta">
-            <div>
-              <h3>Character Study</h3>
-              <p>Sculpt / Anatomy</p>
-            </div>
-            <span>2026</span>
-          </div>
-        </article>
-
-        <article class="project-card project-small">
-          <a href="#project-process" class="project-image">
-            <img src="assets/project-process.jpg" alt="3D character process">
-            <span class="project-number">03</span>
-            <span class="view-project">VIEW PROJECT ↗</span>
-          </a>
-          <div class="project-meta">
-            <div>
-              <h3>Character Process</h3>
-              <p>Sculpt / Retopo / Texture</p>
-            </div>
-            <span>2026</span>
           </div>
         </article>
 
@@ -210,34 +183,39 @@
     </section>
 
     <!-- PROCESS -->
-    <section class="process section">
+    <section class="process section" id="process">
       <div class="section-heading">
         <p class="eyebrow">04 / Process</p>
         <h2>From idea<br>to <em>character.</em></h2>
       </div>
 
-      <div class="process-grid">
-        <div class="process-step">
+      <p class="workflow-caption">Sculpt <span aria-hidden="true">→</span> Retopology <span aria-hidden="true">→</span> UV <span aria-hidden="true">→</span> Baking <span aria-hidden="true">→</span> Texturing <span aria-hidden="true">→</span> Presentation</p>
+      <ol class="process-grid" aria-label="Character production workflow">
+        <li class="process-step">
           <span>01</span>
-          <h3>Shape</h3>
-          <p>Silhouette, proportions and visual language.</p>
-        </div>
-        <div class="process-step">
-          <span>02</span>
           <h3>Sculpt</h3>
-          <p>High-poly forms, anatomy and secondary details.</p>
-        </div>
-        <div class="process-step">
+        </li>
+        <li class="process-step">
+          <span>02</span>
+          <h3>Retopology</h3>
+        </li>
+        <li class="process-step">
           <span>03</span>
-          <h3>Build</h3>
-          <p>Retopology, UVs and optimized game-ready mesh.</p>
-        </div>
-        <div class="process-step">
+          <h3>UV</h3>
+        </li>
+        <li class="process-step">
           <span>04</span>
-          <h3>Surface</h3>
-          <p>Baking, materials, textures and final presentation.</p>
-        </div>
-      </div>
+          <h3>Baking</h3>
+        </li>
+        <li class="process-step">
+          <span>05</span>
+          <h3>Texturing</h3>
+        </li>
+        <li class="process-step">
+          <span>06</span>
+          <h3>Presentation</h3>
+        </li>
+      </ol>
     </section>
 
     <!-- CONTACT -->
@@ -246,10 +224,10 @@
       <h2>Have a project<br>in mind?</h2>
       <p class="contact-text">I'm open to 3D character art opportunities, collaborations and creative projects.</p>
 
-      <a class="email-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=longd67647@gmail.com" target="_blank">longd67647@gmail.com <span>↗</span></a>
+      <a class="email-link" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=longd67647@gmail.com" target="_blank" rel="noopener noreferrer">longd67647@gmail.com <span>↗</span></a>
 
       <div class="contact-bottom">
-        <a href="https://www.artstation.com/quachdailong" target="_blank">ARTSTATION ↗</a>
+        <a href="https://www.artstation.com/quachdailong" target="_blank" rel="noopener noreferrer">ARTSTATION ↗</a>
         <span>© 2026 QUÁCH ĐẠI LONG</span>
       </div>
     </section>
