@@ -74,11 +74,42 @@
       <div class="project-grid">
 
         <article class="project-card project-large">
-          <a href="https://www.artstation.com/quachdailong" class="project-image" target="_blank" rel="noopener noreferrer" aria-label="View Character Project on ArtStation (opens in a new tab)">
-            <img src="assets/project-elf.jpg" alt="Stylized character project, final render">
+          <div class="project-image project-carousel" role="region" aria-roledescription="carousel" aria-label="Character Project image gallery">
+            <div class="carousel-slides">
+              <button class="carousel-slide is-active" type="button" aria-label="Enlarge project image 1 of 3">
+                <img src="assets/project-elf.jpg" alt="Close-up render of the stylized character">
+              </button>
+              <button class="carousel-slide" type="button" aria-label="Enlarge project image 2 of 3" aria-hidden="true" tabindex="-1">
+                <img src="assets/project-study.jpg" alt="Full-body render of the same character">
+              </button>
+              <button class="carousel-slide" type="button" aria-label="Enlarge project image 3 of 3" aria-hidden="true" tabindex="-1">
+                <img src="assets/project-process.jpg" alt="Front view render of the same character">
+              </button>
+            </div>
             <span class="project-number">01</span>
-            <span class="view-project">VIEW PROJECT ↗</span>
-          </a>
+            <button class="carousel-toggle" type="button" aria-pressed="false" aria-label="Pause automatic image rotation">Ⅱ</button>
+            <button class="carousel-control carousel-previous" type="button" aria-label="Previous project image">←</button>
+            <button class="carousel-control carousel-next" type="button" aria-label="Next project image">→</button>
+            <a class="view-project" href="https://www.artstation.com/quachdailong" target="_blank" rel="noopener noreferrer">VIEW PROJECT ↗</a>
+          </div>
+          <dialog class="project-lightbox" aria-label="Enlarged project image">
+            <div class="lightbox-toolbar">
+              <div class="lightbox-navigation" aria-label="Project images">
+                <button class="lightbox-previous" type="button" aria-label="Previous project image">←</button>
+                <span class="lightbox-counter" aria-live="polite">01 / 03</span>
+                <button class="lightbox-next" type="button" aria-label="Next project image">→</button>
+              </div>
+              <div class="lightbox-zoom-controls" aria-label="Image zoom controls">
+                <button class="lightbox-zoom-out" type="button" aria-label="Zoom out">−</button>
+                <button class="lightbox-zoom-reset" type="button" aria-label="Reset zoom">100%</button>
+                <button class="lightbox-zoom-in" type="button" aria-label="Zoom in">+</button>
+              </div>
+              <button class="lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+            </div>
+            <div class="lightbox-stage">
+              <img class="lightbox-image" src="assets/project-elf.jpg" alt="Close-up render of the stylized character" draggable="false">
+            </div>
+          </dialog>
           <div class="project-meta">
             <div>
               <h3><a href="https://www.artstation.com/quachdailong" target="_blank" rel="noopener noreferrer">Character Project ↗</a></h3>
